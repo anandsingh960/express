@@ -1,0 +1,15 @@
+for production
+"scripts": {
+    "build":"babel index.js --out-dir prd",
+    "start": "npm run build && nodemon prd/index.js",
+   
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  for Development
+"scripts": {
+    "start":"babel index.js -w --out-dir prd",
+    "dev": "nodemon prd/index.js",
+   
+   
+  },
